@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+<main>
+    <div class="header-block">
+        <div class="header-container">
+            <div class="header-left">
+                <img alt="logo" class="animate__animated animate__backInLeft" width="97" height="30"
+                     src='./img/logo.png'>
+                <div class='header-left-content animate__animated animate__backInDown'>
+                    <div class="header-slogan">
+                        <h3>С помощью нас<br/>вы сможете создать то, о чем</h3>
+                        <h2 id="wish" style="height: 32px">Желаете!</h2>
+                    </div>
+                    <p class="header-paragraph">
+                        Наши возможности + опыт позволят Вам достичь<br/> огромного успеха. Мы верим в вас! И знаем это
+                        на
+                        <br/>все 100%. Вас не остановить!
+                    </p>
+                    <button class="learn-more">Узнать больше...</button>
+                    <p>Нашими услугами уже воспользовались <b id="count">100130141</b> клиентов</p>
+                </div>
+            </div>
+            <div>
+                <img alt="phone" width="475px" class="phone-image" src="img/header-img.png"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="necessities-block">
+        <h3>Что вам необходимо?</h3>
+        <div class="necessities-container">
+            <div class="necessity">
+                <img alt="f3" src="img/f3.png"/>
+                <h5 class="necessity-title">Первый блок</h5>
+                <p class="necessity-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+
+            <div class="necessity">
+                <img alt="f4" src="img/f4.png"/>
+                <h5 class="necessity-title">Второй блок</h5>
+                <p class="necessity-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+            <div class="necessity">
+                <img alt="f5" src="img/f5.png"/>
+                <h5 class="necessity-title">Третий блок</h5>
+                <p class="necessity-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="form-block">
+        <form class="form-container" id="mailing" onsubmit="submitForm(event)">
+            <h3>Форма оформления подписки на рассылку</h3>
+            <div class="form-fields-container">
+                <input placeholder="Имя" name="name">
+                <input placeholder="Введите свой E-mail" name="email">
+                <input type='number' name="max-month-messages" placeholder="Максимальное количество сообщений в месяц">
+                <input placeholder="Дата автоматической отписки" name="unsubscribe-date" type="date"/>
+                <select name="theme">
+                    <option value="none">Какая тема вас интересует больше всего?</option>
+                    <option value="ad">Реклама</option>
+                    <option value="pr">Продвижение</option>
+                    <option value='dev'>Создание сайтов</option>
+                    <option value='all'>Все темы</option>
+                </select>
+                <p id="mailing-error-message"></p>
+                <button type="submit">Отправить вопрос!</button>
+            </div>
+        </form>
+    </div>
+    <div class="form-block">
+        <form class="form-container">
+            <h3>Форма обратного звонка</h3>
+            <div class="form-fields-container">
+                <input placeholder="Имя" required>
+                <input placeholder="Введите свой E-mail" type="email" required>
+                <input placeholder="Введите свой телефон" type="tel" required
+                       pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                <input placeholder="Какая тема вас интересует" required>
+                <button type="submit">Отправить вопрос!</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>© Все на этом сайте защищено</p>
+    </footer>
+</main>
+</body>
+<script src="js/formValidation.js"></script>
+<script src="js/index.js"></script>
+</html>
